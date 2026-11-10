@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowIcon, Section, SectionIntro } from "@/components/ui";
+import { ProductShowcase } from "@/components/ProductShowcase";
 import { PropertyCard } from "@/components/PropertyCard";
 import { audiences, features, steps, testimonials } from "@/lib/content";
 import { featuredProperties } from "@/lib/properties";
@@ -124,10 +125,12 @@ export default function HomePage() {
           ))}
         </ol>
         <p className="mt-10 max-w-3xl text-sm leading-relaxed text-muted">
-          Dashboards, rent collection, maintenance desks, chore swaps, and ratings are platform features. You can see
-          how they fit here. You use them once your CoHab OS account is open.
+          Dashboards, rent collection, maintenance desks, chore swaps, and ratings are platform features. The screens
+          below are the proposed experience. You use them once your CoHab OS account is open.
         </p>
       </Section>
+
+      <ProductShowcase />
 
       <Section>
         <SectionIntro

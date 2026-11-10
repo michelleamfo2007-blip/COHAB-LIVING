@@ -41,7 +41,7 @@ const documents: Record<string, { title: string; description: string; intro: str
         heading: "What we do not collect here",
         paragraphs: [
           "Login passwords are typed into the sign-in form only so the page can behave like the future entrance. They are cleared in your browser and are not emailed or stored by this website.",
-          "We do not ask you to pay rent, send identity documents, or complete a lease on this site.",
+          "We do not ask you to pay rent, send identity documents, or complete a lease on this site. The identity screens are drawings of a future liveness check. This website does not use your camera or store a biometric.",
         ],
       },
       {

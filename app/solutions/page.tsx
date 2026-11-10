@@ -76,7 +76,10 @@ export default function SolutionsPage() {
         title="The capabilities of a shared home, held in one system."
         lede="CoHab OS covers the work of running a co-living property and the experience of living in it. What follows is the platform. This website is the guide."
       >
-        <Link href="/contact#demo" className="btn btn-gold">
+        <Link href="/#inside" className="btn btn-gold">
+          See the product screens
+        </Link>
+        <Link href="/contact#demo" className="btn btn-ghost-light">
           Book a demo
         </Link>
         <Link href="/pricing" className="btn btn-ghost-light">

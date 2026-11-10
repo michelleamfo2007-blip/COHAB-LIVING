@@ -28,9 +28,9 @@ export const features = [
       "Every home has one record: rooms, residents, documents, and the people responsible. Managers see the portfolio without rebuilding it from chats.",
   },
   {
-    title: "Tenant Onboarding & Verification",
+    title: "Smart Resident Onboarding & Identity Verification",
     summary:
-      "Applications, identity checks, and move-in steps follow a sequence. The evidence stays with the tenancy, and the resident can see what is still outstanding.",
+      "The designed path runs from application to government ID, document checks, and AI-powered facial liveness detection so a photo or video cannot stand in for the applicant. A biometric is taken only with consent. This website does not capture one.",
   },
   {
     title: "Digital Lease Management",
@@ -40,7 +40,7 @@ export const features = [
   {
     title: "Rent Tracking & Financial Management",
     summary:
-      "Charges, receipts, and balances are visible to the people who should see them. Owners get a ledger they can explain.",
+      "The designed ledger shows charges, reminders, history, and a Rent-Score that starts at 100. USD, GHS, and NGN are the intended currencies. Stripe, ACH, Paystack, and Mono are planned, not connected.",
   },
   {
     title: "Utility Bill Splitting",
