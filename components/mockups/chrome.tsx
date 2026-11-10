@@ -43,14 +43,17 @@ export function DesktopMock({
 
 export function PhoneMock({ children }: { children: React.ReactNode }) {
   return (
-    <div className="w-full max-w-[238px] rounded-[1.8rem] bg-navy p-[7px] shadow-[0_24px_50px_rgba(8,20,34,0.2)]">
-      <div className="overflow-hidden rounded-[1.4rem] bg-paper">
-        <div className="flex items-center justify-between px-4 pb-1 pt-2 text-[10px] font-semibold text-navy">
+    <div className="mx-auto flex h-[560px] w-[260px] max-w-full flex-col rounded-[2.2rem] bg-navy p-2 shadow-[0_24px_50px_rgba(8,20,34,0.2)]">
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-[1.75rem] bg-paper">
+        <div className="flex shrink-0 items-center justify-between px-4 pb-1 pt-2.5 text-[10px] font-semibold text-navy">
           <span>9:41</span>
-          <span className="h-4 w-14 rounded-full bg-navy" />
+          <span className="h-4 w-16 rounded-full bg-navy" />
           <span>LTE</span>
         </div>
-        <div className="px-3.5 pb-4">{children}</div>
+        <div className="min-h-0 flex-1 overflow-hidden px-3.5 pb-2">{children}</div>
+        <div className="flex shrink-0 justify-center pb-2.5 pt-1">
+          <span className="h-1 w-24 rounded-full bg-navy/20" />
+        </div>
       </div>
     </div>
   );

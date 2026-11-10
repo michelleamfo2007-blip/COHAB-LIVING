@@ -42,19 +42,19 @@ export function ProductShowcase() {
           They do not sign a lease, take a payment, dispatch a vendor, or run a biometric check.
         </p>
 
-        <figure className="relative mt-12 min-w-0 xl:pb-6">
-          <div className="xl:mr-48" aria-hidden="true">
-            <ManagementDashboard />
-          </div>
-          <figcaption className="mt-3 max-w-xl text-sm text-muted">
-            Property management dashboard. The counts are sample figures for a portfolio across Accra, Lagos, and the United States.
-          </figcaption>
-          <div className="mt-8 flex justify-center xl:absolute xl:right-0 xl:top-8 xl:mt-0" aria-hidden="true">
-            <div className="xl:origin-top-right xl:scale-[0.78]">
-              <ResidentPhone />
+        <div className="mt-12 grid items-center gap-8 xl:grid-cols-[minmax(0,1fr)_260px] xl:gap-10">
+          <figure className="min-w-0">
+            <div aria-hidden="true">
+              <ManagementDashboard />
             </div>
+            <figcaption className="mt-3 max-w-xl text-sm text-muted">
+              Property management dashboard. The counts are sample figures for a portfolio across Accra, Lagos, and the United States.
+            </figcaption>
+          </figure>
+          <div className="flex justify-center" aria-hidden="true">
+            <ResidentPhone />
           </div>
-        </figure>
+        </div>
 
         <div className="mt-20 grid items-center gap-10 lg:grid-cols-2 xl:mt-28">
           <div>
@@ -112,7 +112,7 @@ export function ProductShowcase() {
           </figure>
         </div>
 
-        <div className="mt-16 grid min-w-0 gap-10 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-16 grid min-w-0 items-start gap-10 sm:grid-cols-2 xl:grid-cols-3">
           <Screen title="Living IQ and chores" caption="Weekly house feedback and the rota, including a swap.">
             <LivingIqPhone />
           </Screen>
