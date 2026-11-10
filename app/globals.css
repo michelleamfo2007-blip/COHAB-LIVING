@@ -78,6 +78,7 @@ body {
   min-height: 2.85rem;
   border-radius: 999px;
   padding: 0.7rem 1.3rem;
+  white-space: nowrap;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1;

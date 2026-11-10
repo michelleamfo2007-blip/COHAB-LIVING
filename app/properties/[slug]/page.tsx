@@ -43,9 +43,9 @@ export default async function PropertyPage({ params }: { params: Promise<Params>
           </p>
           <div className="mt-2 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <h1 className="font-serif text-4xl text-navy sm:text-6xl">{property.name}</h1>
-            <p className="font-serif text-3xl text-navy">
+            <p className="font-serif text-3xl text-navy sm:text-4xl">
               {property.price}
-              <span className="ml-2 font-sans text-sm font-medium text-muted">{property.priceNote}</span>
+              <span className="mt-1 block font-sans text-sm font-medium text-muted sm:ml-2 sm:mt-0 sm:inline">{property.priceNote}</span>
             </p>
           </div>
         </div>

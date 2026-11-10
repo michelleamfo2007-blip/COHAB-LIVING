@@ -42,7 +42,7 @@ export function ProductShowcase() {
           They do not sign a lease, take a payment, dispatch a vendor, or run a biometric check.
         </p>
 
-        <figure className="relative mt-12 xl:pb-6">
+        <figure className="relative mt-12 min-w-0 xl:pb-6">
           <div className="xl:mr-48" aria-hidden="true">
             <ManagementDashboard />
           </div>
@@ -93,8 +93,8 @@ export function ProductShowcase() {
           </div>
         </div>
 
-        <div className="mt-20 grid gap-8 lg:grid-cols-2">
-          <figure>
+        <div className="mt-20 grid min-w-0 gap-8 lg:grid-cols-2">
+          <figure className="min-w-0">
             <div aria-hidden="true">
               <MaintenanceDesktop />
             </div>
@@ -102,7 +102,7 @@ export function ProductShowcase() {
               Maintenance dispatch. A plumbing request with an assigned technician and an arrival time. Sample job.
             </figcaption>
           </figure>
-          <figure>
+          <figure className="min-w-0">
             <div aria-hidden="true">
               <IntelligenceDesktop />
             </div>
@@ -112,7 +112,7 @@ export function ProductShowcase() {
           </figure>
         </div>
 
-        <div className="mt-16 grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-16 grid min-w-0 gap-10 sm:grid-cols-2 xl:grid-cols-3">
           <Screen title="Living IQ and chores" caption="Weekly house feedback and the rota, including a swap.">
             <LivingIqPhone />
           </Screen>
@@ -124,8 +124,8 @@ export function ProductShowcase() {
           </Screen>
         </div>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <figure>
+        <div className="mt-10 grid min-w-0 gap-8 lg:grid-cols-2">
+          <figure className="min-w-0">
             <div aria-hidden="true">
               <LandlordScoreDesktop />
             </div>
@@ -133,7 +133,7 @@ export function ProductShowcase() {
               Landlord reliability. A sample 4.8 from maintenance, communication, and resolution. Not a published rating.
             </figcaption>
           </figure>
-          <figure>
+          <figure className="min-w-0">
             <div aria-hidden="true">
               <VendorDesktop />
             </div>
@@ -143,7 +143,7 @@ export function ProductShowcase() {
           </figure>
         </div>
 
-        <figure className="mt-8">
+        <figure className="mt-8 min-w-0">
           <div aria-hidden="true">
             <AnalyticsDesktop />
           </div>
@@ -173,7 +173,7 @@ export function ProductShowcase() {
 
 function Screen({ title, caption, children }: { title: string; caption: string; children: React.ReactNode }) {
   return (
-    <figure>
+    <figure className="min-w-0">
       <div className="flex justify-center" aria-hidden="true">
         {children}
       </div>

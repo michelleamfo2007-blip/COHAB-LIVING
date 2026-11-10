@@ -51,7 +51,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy/10 bg-paper/90 backdrop-blur-md">
-      <div className="mx-auto flex h-[4.5rem] w-full max-w-7xl items-center gap-4 px-5 sm:px-8">
+      <div className="mx-auto flex h-16 w-full max-w-7xl items-center gap-2 px-4 sm:h-[4.5rem] sm:gap-3 sm:px-8">
         <Logo />
         <nav className="ml-4 hidden items-center gap-5 text-sm text-navy lg:flex" aria-label="Primary">
           <Link href="/" aria-current={pathname === "/" ? "page" : undefined} className={navClass(pathname === "/")}>
@@ -125,7 +125,7 @@ export function SiteHeader() {
           <Link href="/login" className="hidden px-2 text-sm font-semibold text-navy sm:inline">
             Login
           </Link>
-          <Link href="/get-started" className="btn btn-gold px-4">
+          <Link href="/get-started" className="btn btn-gold !px-3 text-sm sm:!px-4 sm:text-[0.9375rem]">
             Get Started
           </Link>
           <button
@@ -147,7 +147,7 @@ export function SiteHeader() {
         </div>
       </div>
       {menu ? (
-        <nav id="mobile-nav" className="max-h-[calc(100vh-4.5rem)] overflow-y-auto border-t border-navy/10 bg-paper px-5 py-4 lg:hidden" aria-label="Mobile">
+        <nav id="mobile-nav" className="max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-navy/10 bg-paper px-4 py-4 sm:max-h-[calc(100dvh-4.5rem)] sm:px-5 lg:hidden" aria-label="Mobile">
           <div className="grid gap-1">
             <MobileLink href="/">Home</MobileLink>
             <p className="px-2 pb-1 pt-4 text-xs font-semibold uppercase tracking-[0.16em] text-sage">Solutions</p>

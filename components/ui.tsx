@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-2.5" aria-label="CoHab OS home">
+    <Link href="/" className="flex shrink-0 items-center gap-2" aria-label="CoHab OS home">
       <span className={`grid h-9 w-9 place-items-center rounded-lg ${light ? "bg-gold text-navy" : "bg-navy text-gold"}`}>
         <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
           <path
@@ -11,7 +11,7 @@ export function Logo({ light = false }: { light?: boolean }) {
           />
         </svg>
       </span>
-      <span className={`font-serif text-[1.35rem] leading-none tracking-tight ${light ? "text-paper" : "text-navy"}`}>
+      <span className={`whitespace-nowrap font-serif text-xl leading-none tracking-tight sm:text-[1.35rem] ${light ? "text-paper" : "text-navy"}`}>
         CoHab <span className={light ? "text-gold-soft" : "text-sage"}>OS</span>
       </span>
     </Link>

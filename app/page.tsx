@@ -23,7 +23,7 @@ export default function HomePage() {
         <div className="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 py-16 sm:px-8 lg:grid-cols-12 lg:py-24">
           <div className="lg:col-span-6">
             <p className="rise text-xs font-semibold uppercase tracking-[0.22em] text-gold-soft">Property operating system</p>
-            <h1 className="rise rise-2 mt-5 font-serif text-5xl leading-[1.05] text-balance sm:text-6xl lg:text-[4.4rem]">
+            <h1 className="rise rise-2 mt-5 font-serif text-4xl leading-[1.08] text-balance sm:text-6xl lg:text-[4.4rem]">
               The operating system for homes people share.
             </h1>
             <p className="rise rise-3 mt-6 max-w-xl text-lg leading-relaxed text-mist">
@@ -54,7 +54,7 @@ export default function HomePage() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="absolute -left-2 bottom-6 max-w-xs rounded-2xl border border-white/10 bg-navy-800/95 p-5 shadow-2xl sm:-left-8">
+              <div className="absolute inset-x-3 bottom-4 rounded-2xl border border-white/10 bg-navy-800/95 p-4 shadow-2xl sm:inset-x-auto sm:-left-8 sm:bottom-6 sm:max-w-xs sm:p-5">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-soft">Product preview</p>
                 <p className="mt-2 font-serif text-2xl">The Meridian · East Legon</p>
                 <ul className="mt-3 space-y-1.5 text-sm text-mist">

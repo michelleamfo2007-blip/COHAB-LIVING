@@ -20,12 +20,12 @@ export function ManagementDashboard() {
       </div>
       <div className="mt-3 divide-y divide-navy/10 rounded-xl bg-white">
         {homes.map(([name, place, status]) => (
-          <div key={name} className="flex items-center justify-between px-3 py-2 text-[11px]">
-            <span>
-              <span className="block font-semibold text-navy">{name}</span>
+          <div key={name} className="flex items-center justify-between gap-3 px-3 py-2 text-[11px]">
+            <span className="min-w-0">
+              <span className="block truncate font-semibold text-navy">{name}</span>
               <span className="text-muted">{place}</span>
             </span>
-            <span className="text-sage">{status}</span>
+            <span className="shrink-0 text-sage">{status}</span>
           </div>
         ))}
       </div>
@@ -232,7 +232,7 @@ export function TourPhone() {
     <PhoneMock>
       <p className="text-[10px] uppercase tracking-[0.14em] text-sage">Book a tour</p>
       <p className="font-serif text-lg text-navy">The Meridian</p>
-      <div className="mt-2 flex gap-1.5 text-[10px]">
+      <div className="mt-2 flex flex-wrap gap-1.5 text-[10px]">
         {["In person", "Virtual", "Self-guided"].map((mode, index) => (
           <span key={mode} className={`rounded-full px-2 py-1 ${index === 0 ? "bg-navy text-paper" : "bg-ivory text-navy"}`}>
             {mode}
